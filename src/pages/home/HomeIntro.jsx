@@ -1,4 +1,4 @@
-import homeIntro from '/2wheels-adventure/public/assets/home/homeIntro.jpg';
+import homeIntro from '/public/assets/home/homeIntro.jpg';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa6';
 import Stats from '../../components/Stats';

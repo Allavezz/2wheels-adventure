@@ -1,9 +1,9 @@
-import cta02 from '/2wheels-adventure/public/assets/cta/cta02.jpg';
-import cta01 from '/2wheels-adventure/public/assets/cta/cta01.jpg';
-import cta03 from '/2wheels-adventure/public/assets/cta/cta03.jpg';
-import cta04 from '/2wheels-adventure/public/assets/cta/cta04.jpg';
-import cta05 from '/2wheels-adventure/public/assets/cta/cta05.jpg';
-import cta06 from '/2wheels-adventure/public/assets/cta/cta06.jpg';
+import cta02 from '/public/assets/cta/cta02.jpg';
+import cta01 from '/public/assets/cta/cta01.jpg';
+import cta03 from '/public/assets/cta/cta03.jpg';
+import cta04 from '/public/assets/cta/cta04.jpg';
+import cta05 from '/public/assets/cta/cta05.jpg';
+import cta06 from '/public/assets/cta/cta06.jpg';
 import { useInView } from 'react-intersection-observer';
 const CTA = () => {
 	const { ref, inView } = useInView({ triggerOnce: true });

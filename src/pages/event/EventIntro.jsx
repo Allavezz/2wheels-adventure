@@ -1,5 +1,5 @@
-import logoWhite from '/2wheels-adventure/public/assets/logoWhite.png';
-import logoBlack from '/2wheels-adventure/public/assets/logoBlack.png';
+import logoWhite from '/public/assets/logoWhite.png';
+import logoBlack from '/public/assets/logoBlack.png';
 import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useOutletContext } from 'react-router-dom';
