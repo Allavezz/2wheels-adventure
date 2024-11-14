@@ -36,7 +36,7 @@ const deletePost = async id => {
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route path='/' element={<MainLayout />}>
+		<Route path='/2wheels-adventure/' element={<MainLayout />}>
 			<Route index element={<Home />} />
 			<Route path='/about' element={<About />} />
 			<Route path='/about/:teamMemberId' element={<TeamMember />} />
