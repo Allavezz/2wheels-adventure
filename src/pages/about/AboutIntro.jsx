@@ -1,6 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import Stats from '../../components/Stats';
-import aboutIntro from '/2wheels-adventure/assets/about/aboutIntro.jpg';
+import aboutIntro from '../../../public/assets/about/aboutIntro.jpg';
 
 const AboutIntro = () => {
 	const { ref, inView } = useInView({ triggerOnce: true });

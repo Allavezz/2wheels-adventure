@@ -4,8 +4,8 @@ import EventsIntro from './EventsIntro';
 /* import Perks from '../../components/Perks'; */
 import Services from '../../components/Services';
 import NextEvents from '../../components/NextEvents';
-import eventsHero from '/2wheels-adventure/assets/events/eventsHero.jpg';
-import eventsContact from '/2wheels-adventure/assets/events/eventsContact.jpg';
+import eventsHero from '../../../public/assets/events/eventsHero.jpg';
+import eventsContact from '../../../public/assets/events/eventsContact.jpg';
 import { Outlet, useOutletContext } from 'react-router-dom';
 
 const Events = () => {
