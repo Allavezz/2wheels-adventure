@@ -2,7 +2,6 @@ import EventCard from './EventCard';
 import { events } from '../data/data.json';
 import { useInView } from 'react-intersection-observer';
 
-
 const NextEvents = ({ backgroundImage, backgroundColor, cardGradient }) => {
 	const { ref, inView } = useInView({ triggerOnce: true });
 	return (
@@ -14,7 +13,7 @@ const NextEvents = ({ backgroundImage, backgroundColor, cardGradient }) => {
 			<div className='next-events__container'>
 				{events.map((event, index) => (
 					<div key={index} className={`next-events__card-wrapper tran-top3 ${inView ? 'tran-topd' : ''}`}>
-						<EventCard key={event.id} id={event.id} title={event.title} cardtext={event.cardtext} image={event.image} link={`/events/${event.id}`} cardGradient={cardGradient} />
+						<EventCard key={event.id} id={event.id} title={event.title} cardtext={event.cardtext} image={event.image} link={`/2wheels-adventure/events/${event.id}`} cardGradient={cardGradient} />
 					</div>
 				))}
 			</div>
