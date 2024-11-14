@@ -1,5 +1,5 @@
-import bannerWhite from '/assets/bannerWhite.png';
-import bannerBlack from '/assets/bannerBlack.png';
+import bannerWhite from '/2wheels-adventure/public/assets/bannerWhite.png';
+import bannerBlack from '/2wheels-adventure/public/assets/bannerBlack.png';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';

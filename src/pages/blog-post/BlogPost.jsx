@@ -92,7 +92,7 @@ const BlogPost = ({ deletePost }) => {
 								Back
 							</button>
 							<div className='blog-post__admin-buttons'>
-								<Link className='btn btn--med' to={`/edit-post/${blogPostId}`}>
+								<Link className='btn btn--med' to={`/2wheels-adventure/edit-post/${blogPostId}`}>
 									Edit post
 								</Link>
 								<button onClick={() => onDeleteClick(post.id)} className='btn btn--med'>

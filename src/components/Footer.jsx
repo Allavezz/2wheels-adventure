@@ -1,5 +1,5 @@
-import bannerWhite from '/assets/bannerWhite.png';
-import bannerBlack from '/assets/bannerBlack.png';
+import bannerWhite from '/2wheels-adventure/public/assets/bannerWhite.png';
+import bannerBlack from '/2wheels-adventure/public/assets/bannerBlack.png';
 import { navLinks } from '../data/data.json';
 import { NavLink, Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6';

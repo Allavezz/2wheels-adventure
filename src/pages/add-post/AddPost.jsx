@@ -1,5 +1,5 @@
-import logoWhite from '/assets/logoWhite.png';
-import logoBlack from '/assets/logoBlack.png';
+import logoWhite from '/2wheels-adventure/public/assets/logoWhite.png';
+import logoBlack from '/2wheels-adventure/public/assets/logoBlack.png';
 import { useState } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import { toast } from 'react-toastify';

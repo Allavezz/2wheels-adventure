@@ -1,9 +1,9 @@
 import { useInView } from 'react-intersection-observer';
 import Stats from '../../components/Stats';
-import aboutIntro from '/assets/about/aboutIntro.jpg';
+import aboutIntro from '/2wheels-adventure/public/assets/about/aboutIntro.jpg';
 
 const AboutIntro = () => {
-const { ref, inView } = useInView({ triggerOnce: true });
+	const { ref, inView } = useInView({ triggerOnce: true });
 
 	return (
 		<section className='about-intro section-padding'>

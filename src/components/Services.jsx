@@ -1,7 +1,7 @@
-import service01 from '/assets/services/service01.jpg';
-import service02 from '/assets/services/service02.jpg';
-import service03 from '/assets/services/service03.jpg';
-import service04 from '/assets/services/service04.jpg';
+import service01 from '/2wheels-adventure/public/assets/services/service01.jpg';
+import service02 from '/2wheels-adventure/public/assets/services/service02.jpg';
+import service03 from '/2wheels-adventure/public/assets/services/service03.jpg';
+import service04 from '/2wheels-adventure/public/assets/services/service04.jpg';
 import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { FaArrowDown } from 'react-icons/fa6';

@@ -1,5 +1,5 @@
-import logoWhite from '/assets/logoWhite.png';
-import logoBlack from '/assets/logoBlack.png';
+import logoWhite from '/2wheels-adventure/public/assets/logoWhite.png';
+import logoBlack from '/2wheels-adventure/public/assets/logoBlack.png';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useOutletContext } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -103,7 +103,7 @@ const EditPost = ({ updatePostSubmit }) => {
 								Background:
 							</label>
 							<select className='edit-post__input' value={background} onChange={event => setBackground(event.target.value)} id='background' name='background' required>
-								<option value='/assets/blog/blogHero.jpg'>background image 1</option>
+								<option value='/2wheels-adventure/public/assets/blog/blogHero.jpg'>background image 1</option>
 							</select>
 						</div>
 

@@ -67,7 +67,7 @@ const BlogPosts = () => {
 						))}
 					</div>
 					<div className={`tran-top2 ${inView ? 'tran-topd' : ''}`}>
-						<Link to='/add-post' className='blog-posts__add-post btn btn--med'>
+						<Link to='/2wheels-adventure/add-post' className='blog-posts__add-post btn btn--med'>
 							Create post
 						</Link>
 					</div>
