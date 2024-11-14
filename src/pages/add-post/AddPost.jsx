@@ -67,7 +67,7 @@ const AddPost = ({ addPostSubmit }) => {
 								Background:
 							</label>
 							<select className='add-post__input' value={background} onChange={event => setBackground(event.target.value)} id='background' name='background' required>
-								<option value='/assets/blog/blogHero.jpg'>background image 1</option>
+								<option value='/public/assets/blog/blogHero.jpg'>background image 1</option>
 							</select>
 						</div>
 
