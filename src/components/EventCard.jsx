@@ -3,9 +3,8 @@ import { FaArrowRight, FaArrowDown } from 'react-icons/fa6';
 
 const EventCard = ({ id, cardtext, image, link, cardGradient }) => {
 	const location = useLocation();
-	const isIndex = location.pathname === '/';
+	const isIndex = location.pathname === '/2wheels-adventure/';
 	const showArrow = isIndex ? <FaArrowRight className='arrow-right' /> : <FaArrowDown className='arrow-right' />;
-	
 
 	return (
 		<div key={id} className='event-card tran-top'>

@@ -2,11 +2,10 @@ import { Link } from 'react-router-dom';
 
 const BlogCard = ({ id, image, topic, title, text, picture, name, date }) => {
 	return (
-		
 		/* Set the BlogCard hover feature just on the /blog */
-		<div key={id} className={`blog-card ${location.pathname === '/blog' ? 'blog-card__hover' : ''}`}>
+		<div key={id} className={`blog-card ${location.pathname === '/2wheels-adventure/blog' ? 'blog-card__hover' : ''}`}>
 			{/* Link to the respective BlogPost */}
-			<Link to={`/blog/${id}`}>
+			<Link to={`/2wheels-adventure/blog/${id}`}>
 				<div className='blog-card__image-wrapper'>
 					<img className='blog-card__image' src={image} alt={title} />
 				</div>

@@ -6,7 +6,7 @@ const TeamCard = ({ id, name, role, photo, links }) => {
 
 	return (
 		<div key={id}>
-			<Link className='team-card' to={`/about/${id}`}>
+			<Link className='team-card' to={`/2wheels-adventure/about/${id}`}>
 				<div className='team-card__image-wrapper'>
 					<img src={photo} alt={name} className='team-card__image' />
 				</div>

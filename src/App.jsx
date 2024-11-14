@@ -38,17 +38,17 @@ const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path='/2wheels-adventure/' element={<MainLayout />}>
 			<Route index element={<Home />} />
-			<Route path='/about' element={<About />} />
-			<Route path='/about/:teamMemberId' element={<TeamMember />} />
-			<Route path='/events' element={<Events />}>
-				<Route path='/events/:eventId' element={<Event />} />
+			<Route path='/2wheels-adventure/about' element={<About />} />
+			<Route path='/2wheels-adventure/about/:teamMemberId' element={<TeamMember />} />
+			<Route path='/2wheels-adventure/events' element={<Events />}>
+				<Route path='/2wheels-adventure/events/:eventId' element={<Event />} />
 			</Route>
-			<Route path='/blog' element={<Blog />} />
-			<Route path='/blog/:blogPostId' element={<BlogPost deletePost={deletePost} />} />
-			<Route path='/add-post' element={<AddPost addPostSubmit={addPost} />} />
-			<Route path='/edit-post/:blogPostId' element={<EditPost updatePostSubmit={updatePost} />} />
+			<Route path='/2wheels-adventure/blog' element={<Blog />} />
+			<Route path='/2wheels-adventure/blog/:blogPostId' element={<BlogPost deletePost={deletePost} />} />
+			<Route path='/2wheels-adventure/add-post' element={<AddPost addPostSubmit={addPost} />} />
+			<Route path='/2wheels-adventure/edit-post/:blogPostId' element={<EditPost updatePostSubmit={updatePost} />} />
 
-			<Route path='/contact' element={<Contact />} />
+			<Route path='/2wheels-adventure/contact' element={<Contact />} />
 			<Route path='*' element={<Error404 />} />
 		</Route>,
 	),

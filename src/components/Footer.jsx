@@ -9,7 +9,7 @@ const Footer = ({ isImage }) => {
 		<footer className='footer'>
 			<div className='footer__navigation'>
 				<div className='footer__logo'>
-					<Link to='/'>
+					<Link to='/2wheels-adventure/'>
 						<img className='footer__banner' src={isImage ? bannerBlack : bannerWhite} alt='logo' />
 					</Link>
 				</div>

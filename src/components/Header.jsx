@@ -38,7 +38,7 @@ const Header = ({ handleChange, isChecked, isImage }) => {
 		<header className={`header ${isScrolled ? 'header--opaque' : 'header--transparent'}`}>
 			<div className='header__container'>
 				<div className='header__logo'>
-					<Link to='/'>
+					<Link to='/2wheels-adventure/'>
 						<img className='header__banner' src={isImage ? bannerBlack : bannerWhite} alt='logo' />
 					</Link>
 				</div>
