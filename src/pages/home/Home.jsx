@@ -6,7 +6,7 @@ import HomeBlog from './HomeBlog';
 import Contacts from '../../components/Contacts';
 import Services from '../../components/Services';
 
-import homeContact from '/2wheels-adventure/assets/home/homeContact.jpg';
+import homeContact from '../../../public/assets/home/homeContact.jpg';
 
 const Home = () => {
 	return (
