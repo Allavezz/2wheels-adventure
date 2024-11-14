@@ -89,7 +89,7 @@ const HomeBlog = () => {
 			</div>
 
 			<div className={`home-blog__btn tran-top4 ${inView ? 'tran-topd' : ''}`}>
-				<Link className='btn btn--med' to='/blog'>
+				<Link className='btn btn--med' to='/2wheels-adventure/blog'>
 					Go to the blog <FaArrowRight className='arrow-right' />
 				</Link>
 			</div>
