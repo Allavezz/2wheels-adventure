@@ -7,13 +7,13 @@ import { useInView } from 'react-intersection-observer';
 
 const AddPost = ({ addPostSubmit }) => {
 	const { ref, inView } = useInView({ triggerOnce: true });
-	const [background, setBackground] = useState('/assets/blog/blogHero.jpg');
+	const [background, setBackground] = useState('/public/assets/blog/blogHero.jpg');
 	const [title, setTitle] = useState('');
-	const [image, setImage] = useState('/assets/blog-articles/blogArticle01.jpg');
+	const [image, setImage] = useState('/public/assets/blog-articles/blogArticle01.jpg');
 	const [topic, setTopic] = useState('events');
 	const [text, setText] = useState('');
 	const [text2, setText2] = useState('');
-	const [picture, setPicture] = useState('/assets/team/teamMember03.jpg');
+	const [picture, setPicture] = useState('/public/assets/team/teamMember03.jpg');
 	const [name, setName] = useState('Julia Chase');
 	const [date, setDate] = useState('');
 
