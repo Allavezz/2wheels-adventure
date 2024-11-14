@@ -1,0 +1,92 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// HERO
+
+.hero-title {
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: 5px;
+
+	@include respond(xs) {
+		font-size: 3.5rem;
+	}
+
+	@include respond(sm) {
+		font-size: 6rem;
+	}
+
+	&--small {
+		@include respond(sm) {
+			font-size: 4rem;
+		}
+	}
+}
+
+.hero-text {
+	font-size: 1.5rem;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+
+	@include respond(sm) {
+		font-size: 1.5rem;
+	}
+
+	&--small {
+		@include respond(xs) {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+// SECTION HEADINGS
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	@include respond(sm) {
+		font-size: 3rem;
+	}
+
+	&--med {
+		font-size: 2rem;
+	}
+
+	&--small {
+		font-size: 1.25rem;
+	}
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 400;
+
+	&--opacity {
+		opacity: 0.8;
+	}
+
+	&--big {
+		@include respond(ss) {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.article-title {
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+
+	&--small {
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,148 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+// Section padding
+.section-padding {
+	padding: 3rem 1rem 3rem;
+
+	@include respond(sm) {
+		padding: 4rem 2rem 4rem;
+	}
+
+	@include respond(md) {
+		padding: 6rem 3rem 6rem;
+	}
+
+	&--small-bottom {
+		padding-bottom: 0;
+	}
+}
+
+// Heading padding
+.heading {
+	margin-bottom: 4rem;
+}
+
+// Buttons Arrow Icons
+.arrow-right {
+	font-size: 14px;
+	margin-left: 1rem;
+}
+.arrow-left {
+	font-size: 14px;
+	margin-right: 1rem;
+}
+
+// Transitions----------------------------------
+
+// Transition to top
+
+.tran-top1 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+
+.tran-top2 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.375s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.375s;
+}
+
+.tran-top3 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.75s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.75s;
+}
+
+.tran-top4 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 1.125s, transform 1s cubic-bezier(0.5, 0, 0, 1) 1.125s;
+}
+
+.tran-top5 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 1.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 1.5s;
+}
+
+.tran-top6 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 1.875s, transform 1s cubic-bezier(0.5, 0, 0, 1) 1.875s;
+}
+
+.tran-top7 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 2.25s, transform 1s cubic-bezier(0.5, 0, 0, 1) 2.25s;
+}
+
+.tran-topd {
+	visibility: visible;
+	opacity: 1;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+/* .tran-top1 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0s;
+}
+
+.tran-top2 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 0.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 0.5s;
+}
+
+.tran-top3 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 1s, transform 1s cubic-bezier(0.5, 0, 0, 1) 1s;
+}
+
+.tran-top4 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 1.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 1.5s;
+}
+
+.tran-top5 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 2s, transform 1s cubic-bezier(0.5, 0, 0, 1) 2s;
+}
+
+.tran-top6 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 2.5s, transform 1s cubic-bezier(0.5, 0, 0, 1) 2.5s;
+}
+
+.tran-top7 {
+	visibility: visible;
+	opacity: 0;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 50, 0, 1);
+	transition: opacity 1s cubic-bezier(0.5, 0, 0, 1) 3s, transform 1s cubic-bezier(0.5, 0, 0, 1) 3s;
+}
+
+.tran-topd {
+	visibility: visible;
+	opacity: 1;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+} */

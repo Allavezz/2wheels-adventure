@@ -1,0 +1,77 @@
+@use '../../abstrats' as *;
+
+.contact-intro {
+	background-image: var(--gradient-section);
+
+	&__title {
+		color: var(--white);
+		text-align: center;
+	}
+
+	&__container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 2rem;
+
+		@include respond(sm) {
+			flex-direction: row;
+			gap: 5rem;
+		}
+	}
+
+	&__steps {
+		flex: 1;
+	}
+
+	&__h3 {
+		color: var(--white);
+		margin-bottom: 2rem;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2rem;
+		gap: 2rem;
+	}
+
+	&__step-number {
+		color: var(--white);
+		position: relative;
+		font-size: 1rem;
+		font-weight: 600;
+		padding: 1rem;
+		background-color: var(--grey2);
+		border: 1px solid var(--white);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include respond(ss) {
+			font-size: 1.25rem;
+			padding: 1.5rem;
+		}
+
+		span {
+			position: absolute;
+			margin: 0 auto;
+		}
+	}
+
+	&__step-text {
+		color: var(--text);
+		font-size: 1rem;
+		@include respond(ss) {
+			font-size: 1.25rem;
+		}
+	}
+
+	&__faq {
+		flex: 1;
+	}
+}

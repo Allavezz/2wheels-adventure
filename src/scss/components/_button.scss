@@ -1,0 +1,79 @@
+@use '../abstrats' as *;
+
+.btn {
+	position: relative;
+	background-image: var(--gradient-brand);
+	border: 1px solid var(--white);
+	color: var(--white);
+	letter-spacing: 1.5px;
+	display: inline-block;
+	font-weight: 400;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease;
+	text-align: center;
+
+	&:hover {
+		transform: scale(1.05);
+		border: 1px solid var(--white);
+		background-image: var(--gradient-brand--hover);
+	}
+
+	&--sm {
+		padding: 0.25rem 0.5rem;
+		font-size: 0.5rem;
+	}
+
+	&--bg {
+		padding: 1.5rem 8rem;
+		font-size: 2rem;
+	}
+
+	&--med {
+		font-size: 0.75rem;
+		padding: 0.5rem 0.75rem;
+
+		@include respond(xs) {
+			padding: 0.75rem 2rem;
+			font-size: 14px;
+		}
+	}
+
+	&--inverse {
+		color: var(--white);
+		background-image: linear-gradient(45deg, rgba(240, 240, 240, 0.1) 10%, rgba(240, 240, 240, 0) 100%);
+		background-color: transparent;
+		border: 1px solid var(--white);
+
+		&:hover {
+			background-image: linear-gradient(45deg, rgba(240, 240, 240, 0.3) 10%, rgba(240, 240, 240, 0) 100%);
+		}
+	}
+
+	&--filter {
+		color: var(--white);
+		background-image: unset;
+		background-color: transparent;
+		border: 1px solid transparent;
+		padding: 0.5rem 0;
+
+		&:hover {
+			background-image: unset;
+			color: var(--brand);
+			border: 1px solid transparent;
+		}
+	}
+
+	&--opacity {
+		color: var(--white);
+		background-color: var(--brand);
+		opacity: 0.5;
+
+		&:hover {
+			color: var(--white);
+			background-color: var(--brand);
+			opacity: 1;
+		}
+	}
+}

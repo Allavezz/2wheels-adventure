@@ -1,0 +1,48 @@
+@use '../abstrats' as *;
+
+//Hero
+.hero {
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	color: var(--default-white);
+
+	@include respond(xs) {
+		height: 60vh;
+	}
+	@include respond(sm) {
+		height: 92vh;
+	}
+
+	&--sec {
+		@include respond(sm) {
+			height: 80vh;
+		}
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title {
+		margin-bottom: 0.5rem;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 1rem;
+		margin-top: -1rem;
+		margin-bottom: 2rem;
+
+		@include respond(sm) {
+			font-size: 1.25rem;
+		}
+	}
+}

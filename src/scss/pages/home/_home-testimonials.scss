@@ -1,0 +1,131 @@
+@use '../../abstrats/' as *;
+
+.home-testimonials {
+	background-color: var(--black2);
+
+	&__container {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__title {
+		color: var(--white);
+	}
+
+	&__slide {
+		display: none;
+		width: 80%;
+		text-align: center;
+		padding: 2rem 3rem;
+	}
+
+	&__active {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	&__text {
+		color: var(--text);
+	}
+
+	&__person-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	&__person {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+
+		@include respond(sm) {
+			gap: 1rem;
+		}
+	}
+
+	&__picture-wrapper {
+		display: none;
+		width: 30px;
+		height: 30px;
+		overflow: hidden;
+		border-radius: 50px;
+
+		@include respond(xs) {
+			display: block;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__name {
+		color: var(--brand);
+		font-size: 18px;
+		letter-spacing: 1.1px;
+		font-weight: 600;
+	}
+
+	&__bike {
+		color: var(--white);
+		font-size: 14px;
+		letter-spacing: 1.2px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__arrows {
+		display: none;
+		position: absolute;
+		top: 56%;
+		transform: translateY(-50%);
+		width: 85%;
+		z-index: 1;
+
+		@include respond(sm) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		button {
+			background: none;
+			border: none;
+			color: var(--brand);
+			font-size: 1.5rem;
+		}
+	}
+
+	&__dots {
+		
+	}
+	&__dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: var(--grey);
+		margin: 0 5px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&.active {
+			background-color: var(--brand);
+		}
+
+		&:hover {
+			background-color: var(--white);
+		}
+	}
+}

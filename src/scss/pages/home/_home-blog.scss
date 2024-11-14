@@ -1,0 +1,35 @@
+@use '../../abstrats' as *;
+
+.home-blog {
+	background-image: var(--gradient-section--reverse);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__title {
+		color: var(--white);
+	}
+
+	&__text {
+		color: var(--text);
+	}
+
+	&__swiper {
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+
+	&__slide {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	&__btn {
+		display: inline-block;
+	}
+}

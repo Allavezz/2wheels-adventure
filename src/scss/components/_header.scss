@@ -1,0 +1,159 @@
+@use '../abstrats' as *;
+
+.header {
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	padding: 0.25rem 2rem;
+	position: fixed;
+
+	z-index: 9999;
+	transition: all 0.3s ease;
+
+	&--transparent {
+		color: var(--default-white);
+		background-color: transparent;
+	}
+
+	&--opaque {
+		color: var(--white);
+		background-color: var(--black2);
+	}
+
+	&__container {
+		max-width: 1400px;
+		display: flex;
+		gap: 0.5rem;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		width: 280px;
+		display: flex;
+	}
+
+	&__banner {
+		width: 100%;
+	}
+
+	&__nav {
+		flex: 0 1 auto;
+	}
+
+	&__nav-links {
+		display: none;
+
+		@include respond(sm) {
+			display: flex;
+			justify-content: end;
+			align-items: center;
+		}
+	}
+
+	&__nav-link {
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		font-weight: 400;
+		letter-spacing: 3px;
+		transition: all 0.5s ease;
+		cursor: pointer;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+
+		:hover,
+		.active {
+			color: var(--brand);
+		}
+	}
+
+	&__toggle-menu {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		cursor: pointer;
+
+		@include respond(sm) {
+			display: none;
+		}
+	}
+
+	&__mobile-links {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		padding: 1rem 0;
+		gap: 0.25rem;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		border-top: 1px solid rgba(255, 255, 255, 0.25);
+		transition: all 0.5s ease;
+
+		&--transparent {
+			background-color: transparent;
+		}
+
+		&--opaque {
+			background-color: var(--black2);
+		}
+
+		@include respond(sm) {
+			display: none;
+		}
+
+		&--hidden {
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			right: -100%;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			gap: 0.25rem;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: center;
+			padding: 1rem 0;
+			transition: all 0.5 ease;
+			border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+			&--transparent {
+				background-color: transparent;
+			}
+
+			&--opaque {
+				background-color: var(--black2);
+			}
+		}
+	}
+	&__mobile-link {
+		width: 100%;
+		text-transform: uppercase;
+		font-size: 0.75rem;
+		font-weight: 400;
+		letter-spacing: 3px;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+		flex: 1 1 0;
+		transition: all 0.5s ease;
+		cursor: pointer;
+
+		@include respond(xs) {
+			font-size: 0.75rem;
+		}
+
+		:hover,
+		.active {
+			color: var(--brand);
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@use '../../abstrats/' as *;
+
+.about-team {
+	background-image: var(--gradient-section--reverse);
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__title {
+		color: var(--white);
+	}
+
+	&__text {
+		color: var(--text);
+	}
+
+	&__grid {
+		max-width: 1200px;
+		width: 100%;
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
+
+		@include respond(sm) {
+			gap: 2rem;
+		}
+		@include respond(md) {
+			gap: 3rem;
+		}
+	}
+}

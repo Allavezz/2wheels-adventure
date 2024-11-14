@@ -1,0 +1,43 @@
+@use '../../abstrats' as *;
+
+.error404 {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-color: var(--black2);
+	position: relative;
+
+	&__container {
+	max-width: 900px;
+    width: 100%;
+		position: absolute;
+		color: var(--white);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        text-align: center;
+	}
+
+    &__h1 {
+        font-size: 5rem;
+        letter-spacing: 5px;
+        @include respond(sm) {
+            font-size: 8rem;
+        }
+    }
+
+	&__h3 {
+        font-size: 1.75rem;
+		margin-bottom: 1.5rem;
+        @include respond(sm) {
+            font-size: 3rem;
+        }
+	}
+
+	&__text {
+		color: var(--text);
+        margin-bottom: 1rem;
+	}
+}

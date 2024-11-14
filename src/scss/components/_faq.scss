@@ -1,0 +1,47 @@
+@use '../abstrats' as *;
+
+.faq {
+	background-color: transparent;
+
+	width: 100%;
+	margin: 0 auto;
+
+	&__title {
+		color: var(--white);
+		margin-bottom: 2rem;
+	}
+
+	&__accordion {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__question {
+		color: var(--text);
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		gap: 1rem;
+		align-items: center;
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+		@include respond(ss) {
+			font-size: 1.25rem;
+		}
+
+		&:hover {
+			cursor: pointer;
+			color: var(--brand);
+		}
+	}
+
+	&__icon {
+		color: var(--white);
+	}
+
+	&__answer {
+		color: var(--text);
+		padding-right: 1rem;
+	}
+}

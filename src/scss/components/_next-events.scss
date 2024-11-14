@@ -1,0 +1,42 @@
+@use '../abstrats' as *;
+
+.next-events {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__title {
+		color: var(--white);
+	}
+
+	&__text {
+		color: var(--text);
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 3rem 1rem;
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 5rem;
+
+		@include respond(sm) {
+			gap: 4rem 2rem;
+		}
+
+		@include respond(md) {
+			gap: 6rem 3rem;
+		}
+	}
+
+	&__card-wrapper {
+		padding: 1rem;
+	}
+}

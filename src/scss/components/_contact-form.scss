@@ -1,0 +1,43 @@
+@use '../abstrats' as *;
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+
+	padding: 1rem;
+	margin: 0 auto;
+
+	@include respond(sm) {
+		flex-direction: row;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 50%;
+	}
+
+	&__title {
+		margin-bottom: 1rem;
+	}
+
+	&__text-container {
+		margin-bottom: 4rem;
+	}
+
+	&__text {
+		color: var(--default-white);
+		margin-bottom: 2rem;
+	}
+
+	&__h4title {
+		color: var(--brand);
+	}
+
+	&__link {
+		color: var(--default-white);
+		letter-spacing: 1.2px;
+		margin-bottom: 1rem;
+	}
+}

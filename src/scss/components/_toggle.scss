@@ -1,0 +1,45 @@
+@use '../abstrats' as *;
+
+.toggle {
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding-right: 14px;
+    
+
+	&__button {
+		visibility: hidden;
+	}
+
+	&__button + label {
+		display: flex;
+		align-items: center;
+
+		cursor: pointer;
+	}
+
+	&__button + label::before {
+		content: '';
+		height: 14px;
+		width: 28px;
+		border-radius: 1rem;
+		background-color: var(--toggle-bg);
+		transition: all 0.3s ease;
+	}
+
+	&__button + label::after {
+		content: '';
+		height: 14px;
+		width: 14px;
+		border-radius: 1rem;
+		background-color: var(--toggle);
+		position: absolute;
+        
+		
+	}
+
+	&__button:checked + label::after {
+		transform: translateX(100%);
+	}
+}
