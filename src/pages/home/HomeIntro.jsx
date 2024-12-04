@@ -28,7 +28,7 @@ const HomeIntro = () => {
 						<Stats />
 					</div>
 					<div className={`tran-top5 ${inView ? 'tran-topd' : ''}`}>
-						<Link className='home-intro__btn btn btn--med' to='/about'>
+						<Link className='home-intro__btn btn btn--med' to='/2wheels-adventure/about'>
 							Read More <FaArrowRight className='arrow-right' />
 						</Link>
 					</div>
